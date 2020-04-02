@@ -1,14 +1,16 @@
 # Create a bucket S3
 provider "aws" {
+  shared_credentials_file = "/home/amaury/.aws/credentials"
+  profile = "myprofile"
   region = "us-east-1"
 }
 # Create a AWS S3 Bucket
 resource "aws_s3_bucket" "armazenamento" {
-    bucket = "my-bucket-teste-aws"
+    bucket = "my-bucket-terraform-test-22"
     acl = "private"
 
     tags = {
-        Name = "My bucket"
+        Name = "my-bucket-test"
         Environment = "Dev"
     }    
 }
