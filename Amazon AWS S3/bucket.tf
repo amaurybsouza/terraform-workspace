@@ -2,11 +2,11 @@
 provider "aws" {
   shared_credentials_file = "/home/amaury/.aws/credentials"
   profile = "myprofile"
-  region = "us-east-1"
+  region = "${var.region}"
 }
 # Create a AWS S3 Bucket
 resource "aws_s3_bucket" "armazenamento" {
-    bucket = "my-bucket-terraform-test-22"
+    bucket = "my-bucket-terraform-test-40"
     acl = "private"
 
     tags = {
