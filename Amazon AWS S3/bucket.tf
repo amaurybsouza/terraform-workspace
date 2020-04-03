@@ -6,7 +6,7 @@ provider "aws" {
 }
 # Create a AWS S3 Bucket
 resource "aws_s3_bucket" "armazenamento" {
-    bucket = "my-bucket-terraform-test-40"
+    bucket = "my-bucket-terraform-test-44"
     acl = "private"
 
     tags = {
