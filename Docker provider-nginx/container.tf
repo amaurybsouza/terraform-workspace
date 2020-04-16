@@ -9,8 +9,12 @@ resource "docker_container" "nginx" {
       external = "80"
   }
 }
-
 resource "docker_image" "nginx" {
   name = "nginx:latest"
 }
+
+resource "type" "name" {
+  
+}
+
 
