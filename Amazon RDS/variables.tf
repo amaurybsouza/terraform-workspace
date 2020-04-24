@@ -20,12 +20,12 @@ variable "storage_type" {
 }
 variable "username" {
   description = "name of the database user"
-  default = ""
+  default = "databaseteste"
   type = string
 }
 variable "password" {
   description = "password of the database"
-  default = ""
+  default = "mariaalmeidadechaca"
   type = string
 }
 variable "instance_class" {
@@ -48,6 +48,7 @@ variable "skip_final_snapshot" {
   default = "true"
   type = string
 }
+
 
 
 
