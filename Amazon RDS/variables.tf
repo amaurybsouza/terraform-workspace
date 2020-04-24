@@ -19,13 +19,13 @@ variable "storage_type" {
   default = "gp2"
 }
 variable "username" {
-  description = "name of the database user"
+  description = "Username for the master DB user."
   default = "databaseteste"
   type = string
 }
 variable "password" {
   description = "password of the database"
-  default = "mariaalmeidadechaca"
+  default = " "
   type = string
 }
 variable "instance_class" {
@@ -48,6 +48,24 @@ variable "skip_final_snapshot" {
   default = "true"
   type = string
 }
+variable "identifier" {
+  description = "The name of the RDS instance"
+  default = "terraform-database-test"
+  type = string
+}
+variable "port" {
+  description = "The port on which the DB accepts connections"
+  default = "3306"
+  type = number
+}
+variable "name" {
+  description = "The database name"
+  default = "Mysqldatabase"
+  type = string
+}
+
+
+
 
 
 
